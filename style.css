@@ -300,7 +300,7 @@ nav ul li select {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   width: 70px;
   height: 70px;
-  left: 80px;
+  left: -10px;
   top: 60px;
 }
 .main-section .details .btn button {
@@ -1220,22 +1220,435 @@ nav ul li select {
 }
 /* Tablets */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  ul {
+  body {
+    overflow-x: hidden;
+  }
+  body nav {
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+  }
+  body nav ul {
+    width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 10px;
+    background-color: white;
+    padding-top: 20px;
+  }
+  body nav ul .lt {
+    margin-top: -3px;
+  }
+  body nav ul li {
     list-style: none;
-    outline: none;
-    font-weight: 600;
-    padding: 20px 30px;
-    background-color: rgb(145, 22, 233);
-    border-bottom: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 15px;
   }
-  ul li {
-    padding: 20px 30px;
-    font-size: 23px;
-  }
-  ul .p1 {
+  body nav ul li select {
     outline: none;
     border: none;
+    background-color: white;
+  }
+  body .main-section {
+    overflow-x: hidden;
+  }
+  body .main-section .hero {
+    display: flex;
+    margin-top: 3%;
+    gap: 15px;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    z-index: 99;
+  }
+  body .main-section .hero .container {
+    padding: 0 5px;
+    margin-top: 20px;
+    width: 65%;
+  }
+  body .main-section .hero h2 {
+    font-size: 30px;
+  }
+  body .main-section .hero p {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  body .main-section .hero .btn {
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: rgb(8, 138, 208);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+  }
+  body .main-section .hero .img1 {
+    width: 280px;
+    height: 280px;
+    border-bottom-right-radius: 100%;
+    position: relative;
+    top: 5%;
+  }
+  body .main-section .main {
+    position: relative;
+    top: 15px;
+    align-items: center;
+    margin-bottom: 90px;
+    background: #F8FAFC 0% 0% no-repeat padding-box;
+  }
+  body .main-section .main .ap {
+    position: relative;
+    left: 16%;
+    padding-top: 40px;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: bold;
+  }
+  body .main-section .main .div {
+    position: relative;
+    left: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 75%;
+  }
+  body .main-section .main .div .a1 {
+    width: 90%;
+    height: 0%;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 44px 45px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 22px;
+  }
+  body .main-section .main .div .a1 p {
+    width: 90%;
+    margin-bottom: 18px;
+    font-size: 26px;
+    font-style: bold;
+    font-weight: 700;
+  }
+  body .main-section .main p {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 700;
+  }
+  body .main-section .section {
+    position: relative;
+    top: -50px;
+    background-color: #fff;
+    border-top-left-radius: 50%;
+  }
+  body .main-section .section .ap {
+    position: relative;
+    left: 6%;
+    padding-top: 60px;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: bold;
+  }
+  body .main-section .section .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 25%;
+    width: 80%;
+  }
+  body .main-section .section .div .a1 {
+    width: 70%;
+    height: 30%;
+    padding: 20px 30px;
+    background-color: white;
+  }
+  body .main-section .section .div .a1 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .main-section .section .div .a1 p {
+    margin-bottom: 20px;
+    width: 120%;
+    font-size: 28px;
+    font-style: bold;
+    font-weight: 700;
+  }
+  body .main-section .section .div .a1 .b1 {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+  }
+  body .main-section .section2 {
+    display: block;
+  }
+  body .main-section .section2 h3 {
+    position: relative;
+    left: 1%;
+    padding: 10px 20px;
+    top: -70%;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: bold;
+  }
+  body .main-section .section2 .sec1, body .main-section .section2 .sec3 {
+    padding: 30px 30px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    display: block;
+  }
+  body .main-section .section2 .sec1 .sub, body .main-section .section2 .sec3 .sub {
+    display: flex;
+    gap: 10px;
+  }
+  body .main-section .section2 .sec1 .sub img, body .main-section .section2 .sec3 .sub img {
+    width: 60px;
+    height: 60px;
+  }
+  body .main-section .section2 .sec1 .sub p, body .main-section .section2 .sec3 .sub p {
+    padding-top: 9px;
+    font-size: 29px;
+  }
+  body .main-section .section2 .sec1 img, body .main-section .section2 .sec3 img {
+    width: 5%;
+    height: 10%;
+  }
+  body .main-section .section2 .sec1 .ap, body .main-section .section2 .sec3 .ap {
+    padding-top: 4%;
+    font-size: 34%;
+    font-weight: 600;
+  }
+  body .main-section .section2 .sec1 .b3, body .main-section .section2 .sec3 .b3 {
+    width: 50%;
+    font-size: 25px;
+  }
+  body .main-section .section2 .sec1 .btn, body .main-section .section2 .sec3 .btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: rgb(8, 138, 208);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 19px;
+  }
+  body .main-section .section2 .sec2, body .main-section .section2 .sec4 {
+    width: 75%;
+    float: right;
+    padding: 10px 30px;
+    margin-top: 10px;
+    padding-left: 50px;
+  }
+  body .main-section .section2 .sec2 .sub, body .main-section .section2 .sec4 .sub {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  body .main-section .section2 .sec2 .sub img, body .main-section .section2 .sec4 .sub img {
+    width: 60px;
+    height: 60px;
+  }
+  body .main-section .section2 .sec2 .sub p, body .main-section .section2 .sec4 .sub p {
+    padding-top: 9px;
+    font-size: 29px;
+  }
+  body .main-section .section2 .sec2 img, body .main-section .section2 .sec4 img {
+    width: 5%;
+    height: 10%;
+  }
+  body .main-section .section2 .sec2 .ap, body .main-section .section2 .sec4 .ap {
+    padding-top: 1%;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  body .main-section .section2 .sec2 .b3, body .main-section .section2 .sec4 .b3 {
+    position: relative;
+    left: 5%;
+    width: 85%;
+    font-size: 29px;
+  }
+  body .main-section .section2 .sec2 .btn, body .main-section .section2 .sec4 .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(8, 138, 208);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 13px;
+  }
+  body .main-section .section3 {
+    margin-top: 175px;
+    padding-left: 27%;
+    padding-top: 100px;
+  }
+  body .main-section .section3 h4 {
+    font-size: 39px;
+    font-weight: 800;
+    font-style: bold;
+    position: relative;
+    top: 50px;
+    margin-bottom: 110px;
+    margin-top: 400px;
+  }
+  body .main-section .emppage {
+    position: relative;
+    left: -33%;
+    top: 90%;
+    height: 1350px;
+    width: 130%;
+    padding: 10px 70px;
+    border-radius: 60px;
+    background-color: #F8FAFC;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  body .main-section .empP1 {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  body .main-section .empP1 img {
+    width: 130px;
+    height: 130px;
+  }
+  body .main-section .empP1 p {
+    padding-top: 38px;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  body .main-section .details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 999;
+    top: -10px;
+    width: 100%;
+    gap: 62px;
+    margin-top: 10px;
+    padding-left: 3px;
+  }
+  body .main-section .details .emp1 {
+    height: 300px;
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  body .main-section .details .emp1 .emp {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+  }
+  body .main-section .details .emp1 .emp img {
+    width: 100px;
+    height: 100px;
+  }
+  body .main-section .details .emp1 .emp .emp2 {
+    padding-right: 4px;
+    padding-top: 4%;
+    font-size: 30px;
+    position: relative;
+    left: -26%;
+  }
+  body .main-section .details .emp1 .emp .str img {
+    position: relative;
+    left: -35px;
+    width: 100px;
+    height: 60px;
+  }
+  body .main-section .details .emp1 .empDetails {
+    font-size: 25px;
+  }
+  body .main-section .details .btn {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 43px 45px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 70px;
+    height: 70px;
+    left: 290px;
+    top: 10px;
+  }
+  body .main-section .details .btn button {
+    outline: none;
+    border: none;
+    background: rgba(245, 246, 250, 0.3529411765);
+  }
+  body .main-section .details .btn button i {
+    position: relative;
+    top: -17px;
+  }
+  body .main-section .section4 {
+    margin-top: 20%;
+    padding-left: 5%;
+  }
+  body .main-section .section4 h4 {
+    font-size: 35px;
+    font-weight: 800;
+    font-style: bold;
+    margin-bottom: 9px;
+  }
+  body .main-section .section4 .sec4 {
+    display: flex;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    padding: 70px 30px;
+    margin-top: 90px;
+    justify-content: space-between;
+  }
+  body .main-section .section4 .sec4 .subsec img {
+    width: 140px;
+    height: 70px;
+  }
+  body .main-section .section4 .sec4 .subsec h5 {
+    font-size: 27px;
+    padding-left: 5px;
+    padding-top: 20px;
+  }
+  body .main-section .section5 {
+    background-color: black;
+    margin-top: 60px;
+    width: 100%;
+    height: 3z00px;
+    color: white;
+  }
+  body .main-section .section5 .footer {
+    position: relative;
+    top: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 25px;
+  }
+  body .main-section .section5 .C {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-left: 7px;
+    padding-top: -2px;
+  }
+  body .main-section .section5 .C h4 {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  body .main-section .section5 p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
